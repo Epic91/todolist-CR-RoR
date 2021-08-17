@@ -1,6 +1,6 @@
 <h1>Your Tasks:</h1>
 
 <% @todos.each do |todo| %>
-  <div><%= link_to todo.title, todo_path(todo) %> | <%= todo.name %></div>
+  <div><%=  todo.title %> | <%= todo.name %></div>
 <% end %>
 
