@@ -3,6 +3,10 @@ class TodosController < ApplicationController
     @todos = Todo.all
   end
 
+  def show
+    @todo = Todo.find(params[:id])
+  end
+
   def new
   end
 
@@ -13,9 +17,5 @@ class TodosController < ApplicationController
     @todo[:name] = params[:todo][:name]
     @todo.save
     redirect_to todo_path(@todo)
-  end
-
-  def show
-    @todo = Todo.find(params[:id])
   end
 end

@@ -1,2 +1,6 @@
-<h1>All of your Tasks</h1>
+<h1>Your Tasks:</h1>
+
+<% @todos.each do |todo| %>
+  <div><%= link_to todo.title, todo_path(todo) %> | <%= todo.name %></div>
+<% end %>
 
