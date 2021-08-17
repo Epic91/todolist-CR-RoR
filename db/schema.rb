@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2021_08_17_150643) do
 
   create_table "todos", force: :cascade do |t|
     t.string "title"
-    t.string "task"
+    t.text "task"
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

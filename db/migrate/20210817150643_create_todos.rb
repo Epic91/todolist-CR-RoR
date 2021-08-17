@@ -2,7 +2,7 @@ class CreateTodos < ActiveRecord::Migration[6.1]
   def change
     create_table :todos do |t|
       t.string :title
-      t.string :task
+      t.text :task
       t.string :name
 
       t.timestamps
