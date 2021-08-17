@@ -1,24 +1,9 @@
-# README
+# Todo 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a very simple Rails project, focusing on the index, show, new and create methods.
 
-Things you may want to cover:
+* You are able to submit a task. On submit you are redirected to your new succefully submitted task show page.
 
-* Ruby version
+* You are able to view all of the submitted tasks, each task title is linked to its show page.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* The show page has all of the tasks details such as the title, the task description and the name of who submitted it.
