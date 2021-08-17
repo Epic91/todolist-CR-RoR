@@ -1,2 +1,18 @@
-<h1>Todos#new</h1>
-<p>Find me in app/views/todos/new.html.erb</p>
+<h1>Todo List Form:</h1>
+
+<%= form_tag todos_path do %>
+
+    <label>Name:</label><br>
+    <%= text_field_tag :'todo[name' %><br><br>
+
+    <label>Title:</label><br>
+    <%= text_field_tag :'todo[title]' %><br><br>
+
+    <label>Task:</label><br>
+    <%= text_area_tag :'todo[task]' %><br><br>
+
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= submit_tag "Submit Task" %>
+
+    
+<% end %>
