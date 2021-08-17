@@ -12,6 +12,8 @@
     <%= text_area_tag :'todo[task]' %><br><br>
 
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-    <%= submit_tag "Submit Task" %>
+    <%= submit_tag "Submit Task" %><br><br>
+
+    <%= link_to "View all tasks", todos_path %>
 
 <% end %>

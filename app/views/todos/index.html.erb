@@ -1,6 +1,8 @@
 <h1>Your Tasks:</h1>
 
 <% @todos.each do |todo| %>
-  <div><%=  todo.title %> | <%= todo.name %></div>
-<% end %>
+  <div><%= link_to todo.title, todo_path(todo) %> | <%= todo.name %></div>
+<% end %><br>
+
+<%= link_to "Create a New task", new_todo_path %>
 
